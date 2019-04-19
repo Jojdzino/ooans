@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace OOANS
 {
-    class Message
+    public class Message
     {
         public string Text { get; set; }
+        public User SentFrom { get; internal set; }
 
         public override string ToString()
         {

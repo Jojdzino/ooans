@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOANS.Observer
 {
-    interface IObservable
+    public interface IObservable
     {
         void NotifyObservers(Message message);
         void RegisterObserver(IObserver observer);
