@@ -42,10 +42,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="File.cs" />
     <Compile Include="Iterator\AllUsersIterator.cs" />
     <Compile Include="Iterator\IIterable.cs" />
     <Compile Include="Iterator\IIterator.cs" />
     <Compile Include="Iterator\SingleUserIterator.cs" />
+    <Compile Include="Memento\MessageMementoCaretaker.cs" />
+    <Compile Include="MessageDTO.cs" />
     <Compile Include="Strategy\AddFriendUserStrategy.cs" />
     <Compile Include="Strategy\AddUnknownUserStrategy.cs" />
     <Compile Include="Strategy\IAddUserStrategy.cs" />
