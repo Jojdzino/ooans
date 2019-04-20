@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOANS.Observer
+namespace OOANS
 {
-    public interface IObserver
+    public class File
     {
-        void Update(Message message);
     }
 }

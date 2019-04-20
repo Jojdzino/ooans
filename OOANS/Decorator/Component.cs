@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOANS.Observer
+namespace OOANS.Decorator
 {
-    public interface IObserver
+    public interface IComponent
     {
-        void Update(Message message);
+        string ShowMessage();
     }
 }
