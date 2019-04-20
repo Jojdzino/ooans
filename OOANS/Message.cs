@@ -1,4 +1,5 @@
-﻿using OOANS.Memento;
+﻿using OOANS.Decorator;
+using OOANS.Memento;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace OOANS
 {
-    public class Message
+    public class Message : IComponent
     {
         public string Text { get; set; }
         public User SentFrom { get; internal set; }
@@ -18,15 +19,20 @@ namespace OOANS
             return Text;
         }
 
-        public bool SaveMemento(MessageDTO memento)
+        public bool CreateMemento(MessageDTO memento)
         {
-            return _caretaker.AddMemento(memento);
+            return _caretaker.CreateMemento(memento);
         }
 
         public MessageDTO RestoreMemento(int index)
         {
             this.MessageDTO = _caretaker.GetMemento(index);
             return this.MessageDTO;
+        }
+
+        public string ShowMessage()
+        {
+            return Text;
         }
     }
 }

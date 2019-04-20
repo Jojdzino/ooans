@@ -42,6 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Decorator\Component.cs" />
+    <Compile Include="Decorator\Decorator.cs" />
+    <Compile Include="Decorator\FilterDecorator.cs" />
+    <Compile Include="Decorator\FooterDecorator.cs" />
+    <Compile Include="Decorator\HeaderDecorator.cs" />
     <Compile Include="File.cs" />
     <Compile Include="Iterator\AllUsersIterator.cs" />
     <Compile Include="Iterator\IIterable.cs" />
