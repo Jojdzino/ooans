@@ -20,9 +20,15 @@ namespace OOANS.Iterator
                 this._room = value;
             }
         }
+
         private IList<Message> messages = new List<Message>();
         private Room _room;
         private int index = 0;
+
+        public AllUsersIterator(Room room)
+        {
+            Room = room;
+        }
 
         public bool HasNext()
         {

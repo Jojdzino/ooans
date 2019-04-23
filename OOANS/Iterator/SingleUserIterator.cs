@@ -9,7 +9,7 @@ namespace OOANS.Iterator
     public class SingleUserIterator : IIterator
     {
 
-        public SingleUserIterator(User user)
+        public SingleUserIterator(User user, Room room)
         {
             this.user = user;
         }
