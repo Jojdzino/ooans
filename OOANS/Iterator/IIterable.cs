@@ -7,6 +7,6 @@ namespace OOANS
     {
         string UserName { get; set; }
 
-        IIterator GetIterator(string name);
+        IIterator GetIterator(User user);
     }
 }
