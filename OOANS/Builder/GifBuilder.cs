@@ -6,31 +6,18 @@ using System.Threading.Tasks;
 
 namespace OOANS.Builder
 {
-    class GifBuilder : IBuilder
+    class GifBuilder : Builder
     {
-        public IBuilder AddAttachment(File file)
+        public override IBuilder AddAttachment(File file)
         {
-            throw new NotImplementedException();
-        }
+            if (!(file is Gif))
+            {
+                return this;
+            }
 
-        public IBuilder AddRoom(Room room)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IBuilder AddText()
-        {
-            throw new NotImplementedException();
-        }
-
-        public IBuilder AddUser(User user)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Message Build()
-        {
-            throw new NotImplementedException();
+            Attachments = Attachments ?? new List<File>();
+            Attachments.Add(file);
+            return this;
         }
     }
 }

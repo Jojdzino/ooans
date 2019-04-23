@@ -6,31 +6,18 @@ using System.Threading.Tasks;
 
 namespace OOANS.Builder
 {
-    class FileBuilder : IBuilder
+    class FileBuilder : Builder
     {
-        public IBuilder AddAttachment(File file)
+        public override IBuilder AddAttachment(File file)
         {
-            throw new NotImplementedException();
-        }
+            if (file.GetType() != typeof(File))
+            {
+                return this;
+            }
 
-        public IBuilder AddRoom(Room room)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IBuilder AddText()
-        {
-            throw new NotImplementedException();
-        }
-
-        public IBuilder AddUser(User user)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Message Build()
-        {
-            throw new NotImplementedException();
+            Attachments = Attachments ?? new List<File>();
+            Attachments.Add(file);
+            return this;
         }
     }
 }
