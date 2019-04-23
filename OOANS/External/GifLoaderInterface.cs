@@ -9,7 +9,6 @@ namespace OOANS.External
     // TODO: this should not be interface ???
     class GifLoaderInterface
     {
-        // TODO: upravit text
         public List<Base64> SearchGifsByTextSortedByLength(string text)
         {
             return new List<Base64>();

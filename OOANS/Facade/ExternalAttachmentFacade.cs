@@ -9,7 +9,7 @@ namespace OOANS.Facade
 {
     class ExternalAttachmentFacade
     {
-        // something aggregated ?
+        // TODO something aggregated ?
         GifLoaderInterface gifLoader = new GifLoaderInterface();
         MemeLoaderInterface memeLoader = new MemeLoaderInterface();
 
@@ -20,7 +20,6 @@ namespace OOANS.Facade
         {
             return gifLoader.SearchGifsByTextSortedByLength(text);
         }
-        // TODO: check parameter (file->image)
         public List<Base64> SearchMemesWithImage(Base64 image)
         {
             return memeLoader.SearchMemesByPictureWithTreshold(image, imageTreshold);

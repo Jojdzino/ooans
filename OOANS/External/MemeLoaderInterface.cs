@@ -9,7 +9,6 @@ namespace OOANS.External
     // TODO: this should not be interface ???
     class MemeLoaderInterface
     {
-        // TODO: pozries sa na parametre ..
         public List<Base64> SearchMemesByPictureWithTreshold(Base64 image, float treshold)
         {
             return new List<Base64>();

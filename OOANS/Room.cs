@@ -11,7 +11,7 @@ namespace OOANS
 {
     public class Room : IObservable, IIterable
     {
-        // TODO: upravit model, chyba tam parameter
+        // TODO: Aggregations ?
         private IList<IObserver> observers = new List<IObserver>();
         private IList<Message> messages = new List<Message>();
 
@@ -28,7 +28,6 @@ namespace OOANS
             NotifyObservers(message);
         }
 
-        // TODO: upravit model, chyba tam parameter
         public void NotifyObservers(Message message)
         {
             foreach(var o in observers)
