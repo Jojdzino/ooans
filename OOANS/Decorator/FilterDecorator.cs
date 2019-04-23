@@ -10,19 +10,17 @@ namespace OOANS.Decorator
     class FilterDecorator : Decorator
     {
         public IComponent Component { get; set; }
-        string rule;
-
-
+        private string strVal;
 
         public void SetStringValue(string strVal)
         {
-            this.rule = strVal;
+            this.strVal = strVal;
         }
 
         public string ShowMessage()
         {
 
-            return Component.ShowMessage().Replace(rule, "");
+            return Component.ShowMessage().Replace(strVal, "");
 
         }
     }
