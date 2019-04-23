@@ -4,12 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-/// <summary>
-/// Dummy type represents image in our system
-/// </summary>
 namespace OOANS
 {
-    class Image : File
+    class Gif : File
     {
     }
 }

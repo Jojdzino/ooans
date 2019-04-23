@@ -10,9 +10,27 @@ namespace OOANS.Builder
     {
         public IBuilder Builder { get; private set; }
 
-        public void ChangeBuilder()
+        public void ChangeBuilder(string type)
         {
-
+            switch(type)
+            {
+                case "photo":
+                    {
+                        Builder = new PhotoBuilder();
+                        break;
+                    }
+                case "file":
+                    {
+                        Builder = new FileBuilder();
+                        break;
+                    }
+                case "gif":
+                    {
+                        Builder = new GifBuilder();
+                        break;
+                    }
+                default: break;
+            }
         }
 
         public Message Make()

@@ -10,7 +10,7 @@ namespace OOANS.Builder
     {
         IBuilder AddAttachment(File file);
         IBuilder AddRoom(Room room);
-        IBuilder AddText();
+        IBuilder AddText(string text);
         IBuilder AddUser(User user);
         Message Build();
     }

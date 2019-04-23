@@ -14,6 +14,12 @@ namespace OOANS
         public User SentFrom { get; internal set; }
         public MessageDTO MessageDTO {get;set;}
         private MessageMementoCaretaker _caretaker = new MessageMementoCaretaker();
+
+        public Message(MessageDTO messageDTO)
+        {
+            MessageDTO = messageDTO;
+        }
+
         public override string ToString()
         {
             return Text;

@@ -11,13 +11,14 @@ namespace OOANS
         public string Text { get; set; }
         private IList<File> _attachments;
         private User _from;
-        private User _to;
+        private Room _to;
 
-        public MessageDTO(User from, User to, string text)
+        public MessageDTO(User from, Room to, string text, List<File> attachments)
         {
             this._from = from;
             this._to = to;
             this.Text = text;
+            this._attachments = attachments;
         }
 
         public void AddAtachment(File file)
