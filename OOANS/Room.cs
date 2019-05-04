@@ -56,8 +56,8 @@ namespace OOANS
         public IIterator GetIterator(User user)//if user is null then you get iterator to go over all messages otherwise you get iterator to go over messages of that user in room
         {
             if (user == null)
-                return new AllUsersIterator();
-            return new SingleUserIterator(user);
+                return new AllUsersIterator(this);
+            return new SingleUserIterator(user,this);
         }
     }
 }
