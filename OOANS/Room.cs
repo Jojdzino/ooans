@@ -11,7 +11,6 @@ namespace OOANS
 {
     public class Room : IObservable, IIterable
     {
-        // TODO: Aggregations ?
         private IList<IObserver> observers = new List<IObserver>();
         private IList<Message> messages = new List<Message>();
 

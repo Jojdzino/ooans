@@ -23,7 +23,6 @@ namespace OOANS.Builder
             return this;
         }
 
-        // TODO: pridate string parameter
         public IBuilder AddText(string text)
         {
             Text = text;

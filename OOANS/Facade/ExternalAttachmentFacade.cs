@@ -9,7 +9,6 @@ namespace OOANS.Facade
 {
     class ExternalAttachmentFacade
     {
-        // TODO something aggregated ?
         GifLoaderInterface gifLoader = new GifLoaderInterface();
         MemeLoaderInterface memeLoader = new MemeLoaderInterface();
 

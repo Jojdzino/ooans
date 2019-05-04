@@ -9,7 +9,6 @@ namespace OOANS.Adapter
 {
     class ExternalAtachmentAdapter : IExternalAtachmentAdapter
     {
-        // TODO: agregovana fasada ?
         ExternalAttachmentFacade facade = new ExternalAttachmentFacade();
 
         public List<Image> SearchMemesWithImage(Image image)
